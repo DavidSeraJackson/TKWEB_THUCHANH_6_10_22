@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  /* cuộn chuột mượt */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* *********scrollbar thay doi cuon chuot******* */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 12px;
+}
+
+/* handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 12px;
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(180, 192, 172);
+}
+
+/* *********HEADER********** */
+#header {
+  position: fixed;
+  background-color: #7375c1;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100000;
+}
+.logo img {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 2px;
+}
+
+/* nav animation */
+.nav-link:after {
+  background: none repeat scroll 0 0 transparent;
+  border-radius: 2px;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #000000;
+  width: 0;
+  scale: 50%;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.nav-link:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* scale */
+div > nav > div > img {
+  width: 51px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+div > ul > li {
+  transition: 0.5s;
+}
+
+div > ul > li:hover {
+  scale: 110%;
+  /* background:#fff;
+  color:#dbf0ff; */
+}
+
+ul > li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+nav > div > a {
+  transition: 0.5s;
+}
+
+nav > div > a:hover {
+  scale: 110%;
+}
+/* *************HẾT HEADER**************** */
+
+
+/* table content */
+
+.table {
+  margin-top: 90px;
+}
+
+
+
+
+/* ************************************************ */
+/* NOI DUNG TRANG */
+/* ************************************************ */
+
+
+
+
+
+
+
+/* cuon chuot */
+.scroller {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  padding: 5px;
+}
+
+.scroller marquee {
+  text-align: center;
+  color: #7375c1;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
